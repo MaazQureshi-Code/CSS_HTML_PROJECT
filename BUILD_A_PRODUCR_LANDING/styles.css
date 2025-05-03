@@ -1,0 +1,74 @@
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  #nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff; /* Optional: To make the nav bar visible */
+    z-index: 1000; /* Ensures it stays above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+ header{
+    width: 100%;
+    height: 50px;
+    background-color: #74a1a9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    
+ }
+
+
+ nav {
+    width: 50%;
+    max-width: 300px;
+    height: 50px;
+    margin: auto;
+
+  }
+
+  ul {
+    
+   display: inline-flex;
+    list-style: none;
+    padding-inline-start: 0;
+    margin-block: 0;
+    align-items: center;
+    height: 100%;
+  }
+
+  li{
+    color: #dfdfe2;
+    margin-top: 0.2em;
+    padding: 0.6rem;
+    display: block;
+  }
+ a{
+    text-decoration: none;
+    border: 6px solid chartreuse;
+    height: 50em;
+    width: 50em;
+ }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    #nav-bar ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    iframe {
+      width: 100%;
+      height: auto;
+    }
+  }
+  

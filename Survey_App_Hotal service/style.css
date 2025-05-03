@@ -1,0 +1,88 @@
+
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #85c7d1;
+    color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
+}
+
+h1,p{
+    text-align: center;
+    padding-top: 0%;
+    margin: 1em auto;
+}
+
+form{
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 2em;
+    border: #f5f6f7 solid 1px;
+    background-color: rgb(78, 45, 131);
+
+}
+fieldset{
+    border: none;
+    padding: 2em auto;
+    
+}
+
+label{
+    display: block;
+    margin: 0.5em 0;
+}
+
+input,textarea,select{
+    margin: 10px 0 0 0;
+    margin-bottom: 6px;
+
+}
+
+.styled-input{
+    width: 450px;
+    height: 2.5em;
+    border-radius: 2%;
+    border: #2e4153 5px solid;
+}
+
+select{
+    width: 450px;
+    height: 2.5em;
+    border-radius: 2%;
+    border: #2e4153 5px solid;
+    margin-top: 0em;
+}
+.cuisine-text{
+    display: inline-block;
+    padding-left: 5px;
+    margin-bottom: 2px;
+
+}
+.favortie-food{
+    display: inline-block;
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #45458e;
+    border-color: rgb(217, 205, 205);
+    min-width: 300px;
+  }
+  input[type="file"] {
+    padding: 1px 2px;
+  }
+  #comment{
+    width: 35em;
+    height: 10em;
+    margin: 0 auto;
+  }

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form">
+      <fieldset>
+        <div id="information">
+          <label for="first-name" id="name-label">Name: 
+            <input id="name" name="name" class="styled-input" type="text" placeholder="Enter your name" required />
+          </label>
+          <label for="email" id="email-label">Email: 
+            <input id="email" name="email" type="email" class="styled-input" placeholder="Enter your email" required />
+          </label>
+          <label for="age" id="number-label">Age: 
+            <input id="number" name="number" min="2" max="5" type="number" class="styled-input" placeholder="Enter your age" required />
+          </label>
+        </div>
+      </fieldset>
+      
+      <fieldset>
+        <label id="types">
+          <span class="cuisine-text">What type of Cuisine do you like?</span>
+          <select id="dropdown" class="Cuisine">
+            <option value="0">Select type of Cuisine you like most</option>
+            <option value="1">Asian</option>
+            <option value="2">Afghan</option>
+            <option value="3">Italian Cuisine</option>
+            <option value="4">Thai Cuisine</option>
+            <option value="5">Indian Cuisine</option>
+            <option value="6">French Cuisine</option>
+          </select>
+        </label>
+        
+        <label>Would you recommend MQ restaurants to your friends?</label>
+        <label for="recommended1">
+          <input type="radio" id="recommended1" name="recommended" value="Definitely" class="inline">Definitely
+        </label>
+        <label for="recommended2">
+          <input type="radio" id="recommended2" name="recommended" value="Maybe" class="inline">Maybe
+        </label>
+        <label for="recommended3">
+          <input type="radio" id="recommended3" name="recommended" value="No" class="inline">No
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label><span class="favorite-food">What is your favorite food in our restaurant?</span></label>
+        <select id="favorite-food" class="favorite">
+          <option value="0">Select type of food you like most</option>
+          <option value="1">Burger</option>
+          <option value="2">Pizza</option>
+          <option value="3">Italian Pizza</option>
+          <option value="4">Thai Chicken</option>
+          <option value="5">Indian Biryani</option>
+          <option value="6">French Fries</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <label for="improved">What should we improve?</label>
+        <label for="improvement1">
+          <input type="radio" id="improvement1" name="improvement" value="Food" class="inline">Food
+        </label>
+        <label for="improvement2">
+          <input type="radio" id="improvement2" name="improvement" value="Service" class="inline">Service
+        </label>
+        <label for="improvement3">
+          <input type="radio" id="improvement3" name="improvement" value="Fast Food" class="inline">Fast Food
+        </label>
+        <label for="improvement4">
+          <input type="radio" id="improvement4" name="improvement" value="Dessert" class="inline">Dessert
+        </label>
+        <label for="improvement5">
+          <input type="radio" id="improvement5" name="improvement" value="Decoration" class="inline">Decoration
+        </label>
+        <label for="improvement6">
+          <input type="radio" id="improvement6" name="improvement" value="Drink" class="inline">Drink
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What services did you use? (Select all that apply)</legend>
+        <label for="checkbox1">
+          <input type="checkbox" id="checkbox1" name="services" value="Dine-in"> Dine-in
+        </label>
+        <label for="checkbox2">
+          <input type="checkbox" id="checkbox2" name="services" value="Takeaway"> Takeaway
+        </label>
+        <label for="checkbox3">
+          <input type="checkbox" id="checkbox3" name="services" value="Delivery"> Delivery
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="comment">Any comments or suggestions?</label>
+        <textarea id="comment" name="comment" rows="3" cols="30" placeholder="Enter your comments"></textarea>
+      </fieldset>
+
+      <input id ="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

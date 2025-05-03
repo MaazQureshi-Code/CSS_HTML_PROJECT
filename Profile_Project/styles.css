@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding-top: 60px;  /* Ensure the content does not get hidden under the navbar */
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Navbar */
+  #navbar {
+    position: fixed;  /* Fixed position to stay at the top */
+    top: 0;           /* Always at the top of the viewport */
+    left: 0;          /* Align to the left */
+    width: 100%;      /* Full width */
+    background-color: #333;  /* Dark background */
+    color: white;     /* White text */
+    padding: 10px 0;   /* Padding for better spacing */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    z-index: 1000;    /* Ensures it stays above other content */
+  }
+  
+  #navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #navbar li {
+    margin: 0 15px;
+  }
+  
+  #navbar a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  #navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Welcome Section */
+  #welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  #welcome-section h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  /* Projects Section */
+  #projects {
+    padding: 50px 20px;
+    background-color: #e8e8e8;
+  }
+  
+  .project-tile {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  /* Contact Section */
+  #contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #d8d8d8;
+  }
+  
+  /* Media Query */
+  @media (max-width: 768px) {
+    #navbar ul {
+      flex-direction: column;
+    }
+  
+    .project-tile {
+      max-width: 90%;
+    }
+  }
+  
